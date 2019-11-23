@@ -77,13 +77,69 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <circuit name="PC Logic">
     <a name="circuit" val="PC Logic"/>
     <a name="clabel" val=""/>
-    <a name="clabelup" val="east"/>
+    <a name="clabelup" val="south"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(290,260)" to="(350,260)"/>
+    <wire from="(330,220)" to="(390,220)"/>
+    <wire from="(100,250)" to="(100,260)"/>
+    <wire from="(280,240)" to="(280,250)"/>
+    <wire from="(360,180)" to="(360,190)"/>
+    <wire from="(330,220)" to="(330,240)"/>
+    <wire from="(490,280)" to="(490,360)"/>
+    <wire from="(130,250)" to="(130,280)"/>
+    <wire from="(410,270)" to="(410,360)"/>
+    <wire from="(530,110)" to="(530,260)"/>
+    <wire from="(180,240)" to="(280,240)"/>
+    <wire from="(390,250)" to="(480,250)"/>
+    <wire from="(330,240)" to="(350,240)"/>
+    <wire from="(330,160)" to="(350,160)"/>
+    <wire from="(510,260)" to="(530,260)"/>
+    <wire from="(120,230)" to="(140,230)"/>
+    <wire from="(250,260)" to="(270,260)"/>
+    <wire from="(380,160)" to="(390,160)"/>
+    <wire from="(130,250)" to="(140,250)"/>
+    <wire from="(330,110)" to="(330,160)"/>
+    <wire from="(390,160)" to="(390,220)"/>
+    <wire from="(410,270)" to="(480,270)"/>
+    <wire from="(330,110)" to="(530,110)"/>
+    <comp lib="0" loc="(490,360)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="control in"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(360,190)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
     <comp lib="3" loc="(390,250)" name="Adder"/>
+    <comp lib="4" loc="(380,160)" name="Register">
+      <a name="label" val="PC"/>
+    </comp>
+    <comp lib="3" loc="(180,240)" name="Comparator"/>
+    <comp lib="0" loc="(100,260)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(410,360)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="address bus"/>
+    </comp>
+    <comp lib="4" loc="(120,230)" name="Counter"/>
+    <comp lib="0" loc="(250,260)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(290,260)" name="Controlled Buffer">
+      <a name="width" val="8"/>
+      <a name="control" val="left"/>
+    </comp>
+    <comp lib="0" loc="(130,280)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0xa"/>
+    </comp>
     <comp lib="2" loc="(510,260)" name="Multiplexer">
+      <a name="width" val="8"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="4" loc="(380,160)" name="Register"/>
   </circuit>
   <circuit name="Register File">
     <a name="circuit" val="Register File"/>
